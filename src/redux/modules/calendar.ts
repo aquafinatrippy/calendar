@@ -4,7 +4,8 @@ import axios from "axios";
 
 const initialState = {
     isFetching: false,
-    error: null
+    error: null,
+    holidays: []
 };
 
 export const getMonth = createAsyncThunk(
@@ -14,7 +15,6 @@ export const getMonth = createAsyncThunk(
             "apiKey": "ac258f2b29d09194ce6aa01a0438a8e5",
             "startDate": "2021-09-01",
             "endDate": "2021-09-30"})
-        console.log(res.data)
         if (res.status === 200) return res.data
         return thunkAPI.rejectWithValue(res)
     }
@@ -26,9 +26,9 @@ export const calendarSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: {
-        [getMonth.fulfilled.type]: (state) => {
+        [getMonth.fulfilled.type]: (state, {payload}) => {
             state.isFetching = false
-
+            state.holidays = payload.holidays
         },
         [getMonth.rejected.type]: (state, {payload}) => {
             state.isFetching = false

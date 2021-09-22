@@ -1,16 +1,29 @@
-.calendar{
+.calendarComp{
   display: flex;
-  flex-direction: row;
-  .holiday{
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 
+  .calendar{
+    display: flex;
+    flex-direction: row;
+    .holiday{
+
+    }
+    .day{
+      padding: 10px;
+      border: 1px #000 solid;
+    }
   }
-  .day{
-    padding: 5px
+
+
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    p{
+      cursor: pointer;
+    }
   }
 }
 
-.navigation{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-}
