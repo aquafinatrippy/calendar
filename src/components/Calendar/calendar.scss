@@ -1,0 +1,16 @@
+.calendar{
+  display: flex;
+  flex-direction: row;
+  .holiday{
+
+  }
+  .day{
+    padding: 5px
+  }
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
