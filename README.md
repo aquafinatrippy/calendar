@@ -1,9 +1,9 @@
 # Setup and how to run
 
-´Cli commands´
+#´Cli commands´
  * git clone git@github.com:aquafinatrippy/calendar.git
  * cd calendar
  * npm install
  * npm run start
-´To see application´
+#´To see application´
 - Go to localhost:7777 in browser
