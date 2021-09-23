@@ -5,5 +5,5 @@
  * cd calendar
  * npm install
  * npm run start
-
+´To see application´
 - Go to localhost:7777 in browser
