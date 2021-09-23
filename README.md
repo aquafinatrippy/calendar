@@ -7,4 +7,4 @@
  * npm run start
 # To see application
 
-- Go to localhost:7777 in browser
+- Go to localhost:3000 in browser
