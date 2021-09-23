@@ -3,3 +3,8 @@ export interface Calendar{
     error: null | string,
     holidays: []
 }
+
+export interface CalendarSettings{
+    startDate: string;
+    endDate: string
+}
