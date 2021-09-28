@@ -36,8 +36,7 @@ export const Calendar: FC = () => {
                 }))
             }
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [startDate])
+    }, [startDate, dispatch, end, start])
 
 
 

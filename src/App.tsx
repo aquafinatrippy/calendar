@@ -3,6 +3,7 @@ import './App.scss';
 import {Dashboard} from "./views/Dashboard";
 
 function App() {
+    
   return (
     <div className="App">
       <Dashboard/>
